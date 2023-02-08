@@ -1288,6 +1288,13 @@
       (effects (font (size 1.27 1.27)) (justify left) hide)
     )
   )
+  (global_label "Vout" (shape input) (at 271.78 81.28 180) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify right))
+    (uuid 54d01842-c5a2-499d-86c7-41a800951e84)
+    (property "Intersheet References" "${INTERSHEET_REFS}" (id 0) (at 265.2545 81.2006 0)
+      (effects (font (size 1.27 1.27)) (justify right) hide)
+    )
+  )
 
   (symbol (lib_id "power:+BATT") (at 97.79 66.04 0) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
@@ -1355,6 +1362,21 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 166bce2e-b925-4f28-9c3a-544eb0dab4e4))
+  )
+
+  (symbol (lib_id "Connector:Screw_Terminal_01x02") (at 276.86 83.82 0) (mirror x) (unit 1)
+    (in_bom yes) (on_board yes) (fields_autoplaced)
+    (uuid 14e1b2a0-bf13-495d-b056-57752aff2703)
+    (property "Reference" "Jout1" (id 0) (at 276.86 74.93 0))
+    (property "Value" "Screw_Terminal_01x02" (id 1) (at 276.86 77.47 0))
+    (property "Footprint" "TerminalBlock:TerminalBlock_bornier-2_P5.08mm" (id 2) (at 276.86 83.82 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (id 3) (at 276.86 83.82 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid ac8ed2ca-c013-498a-8699-930c260c1f43))
+    (pin "2" (uuid d4959881-b83a-4d59-b37a-050b03bcc347))
   )
 
   (symbol (lib_id "Device:R") (at 220.98 95.25 180) (unit 1)
@@ -1917,6 +1939,22 @@
     (pin "1" (uuid d12c0f9d-5475-42dd-a014-7087eff88351))
   )
 
+  (symbol (lib_id "power:GND") (at 271.78 83.82 0) (unit 1)
+    (in_bom yes) (on_board yes) (fields_autoplaced)
+    (uuid dc08c6c7-93e9-4580-b87f-3463dca50515)
+    (property "Reference" "#PWR0117" (id 0) (at 271.78 90.17 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "GND" (id 1) (at 271.78 88.9 0))
+    (property "Footprint" "" (id 2) (at 271.78 83.82 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (id 3) (at 271.78 83.82 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid fbb7b70e-03a4-48da-a376-7f6cf5d8b466))
+  )
+
   (symbol (lib_id "power:-BATT") (at 38.1 107.95 0) (mirror x) (unit 1)
     (in_bom yes) (on_board yes) (fields_autoplaced)
     (uuid dc3a4308-328a-4ccb-9b75-b74cad951db3)
@@ -2017,6 +2055,9 @@
     (path "/8958c196-cd46-4732-a737-0499491ba1dc"
       (reference "#PWR0116") (unit 1) (value "GND") (footprint "")
     )
+    (path "/dc08c6c7-93e9-4580-b87f-3463dca50515"
+      (reference "#PWR0117") (unit 1) (value "GND") (footprint "")
+    )
     (path "/7395de6f-6f04-4949-bbb2-d6ba4f5c1c78"
       (reference "Cin1") (unit 1) (value "100uF") (footprint "Capacitor_THT:CP_Radial_D8.0mm_P5.00mm")
     )
@@ -2037,6 +2078,9 @@
     )
     (path "/634a13af-34a8-406d-acd8-e52cce2167e1"
       (reference "Jin1") (unit 1) (value "Screw_Terminal_01x02") (footprint "TerminalBlock:TerminalBlock_bornier-2_P5.08mm")
+    )
+    (path "/14e1b2a0-bf13-495d-b056-57752aff2703"
+      (reference "Jout1") (unit 1) (value "Screw_Terminal_01x02") (footprint "TerminalBlock:TerminalBlock_bornier-2_P5.08mm")
     )
     (path "/db114e00-fbd1-4e76-a26c-829092f18086"
       (reference "L1") (unit 1) (value "100uF") (footprint "Inductor_THT:L_Toroid_Vertical_L14.7mm_W8.6mm_P5.58mm_Pulse_KM-1")
