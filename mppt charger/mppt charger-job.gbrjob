@@ -1,97 +1,107 @@
 {
-"DesignRules": [
-{
-"Layers": "Outer",
-"MinLineWidth": 0.25,
-"PadToPad": 0.2,
-"PadToTrack": 0.2,
-"RegionToRegion": 0.508,
-"TrackToRegion": 0.508,
-"TrackToTrack": 0.2
-}
-],
-"FilesAttributes": [
-{
-"FileFunction": "Copper,L1,Top",
-"FilePolarity": "Positive",
-"Path": "mppt charger-F_Cu.gbr"
-},
-{
-"FileFunction": "Legend,Top",
-"FilePolarity": "Positive",
-"Path": "mppt charger-F_Silkscreen.gbr"
-},
-{
-"FileFunction": "SolderMask,Top",
-"FilePolarity": "Negative",
-"Path": "mppt charger-F_Mask.gbr"
-},
-{
-"FileFunction": "Profile",
-"FilePolarity": "Positive",
-"Path": "mppt charger-Edge_Cuts.gbr"
-}
-],
-"GeneralSpecs": {
-"BoardThickness": 1.6,
-"Finish": "None",
-"LayerNumber": 2,
-"ProjectId": {
-"GUID": "6e657720-7363-4686-956d-61746963732e",
-"Name": "new schematics",
-"Revision": "rev?"
-},
-"Size": {
-"X": 0.0,
-"Y": 0.0
-}
-},
-"Header": {
-"CreationDate": "2023-02-08T18:45:32+00:00",
-"GenerationSoftware": {
-"Application": "Pcbnew",
-"Vendor": "KiCad",
-"Version": "(6.0.11)"
-}
-},
-"MaterialStackup": [
-{
-"Name": "Top Silk Screen",
-"Type": "Legend"
-},
-{
-"Name": "Top Solder Paste",
-"Type": "SolderPaste"
-},
-{
-"Name": "Top Solder Mask",
-"Type": "SolderMask"
-},
-{
-"Name": "F.Cu",
-"Type": "Copper"
-},
-{
-"Material": "FR4",
-"Name": "F.Cu/B.Cu",
-"Notes": "Type: dielectric layer 1 (from F.Cu to B.Cu)",
-"Type": "Dielectric"
-},
-{
-"Name": "B.Cu",
-"Type": "Copper"
-},
-{
-"Name": "Bottom Solder Mask",
-"Type": "SolderMask"
-},
-{
-"Name": "Bottom Solder Paste",
-"Type": "SolderPaste"
-},
-{
-"Name": "Bottom Silk Screen",
-"Type": "Legend"
-}
-]
+  "Header": {
+    "GenerationSoftware": {
+      "Vendor": "KiCad",
+      "Application": "Pcbnew",
+      "Version": "(6.0.11)"
+    },
+    "CreationDate": "2023-02-09T14:29:28+00:00"
+  },
+  "GeneralSpecs": {
+    "ProjectId": {
+      "Name": "mppt charger",
+      "GUID": "6d707074-2063-4686-9172-6765722e6b69",
+      "Revision": "rev?"
+    },
+    "Size": {
+      "X": 0.0,
+      "Y": 0.0
+    },
+    "LayerNumber": 2,
+    "BoardThickness": 1.6,
+    "Finish": "None"
+  },
+  "DesignRules": [
+    {
+      "Layers": "Outer",
+      "PadToPad": 0.2,
+      "PadToTrack": 0.2,
+      "TrackToTrack": 0.2,
+      "MinLineWidth": 0.25,
+      "TrackToRegion": 0.508,
+      "RegionToRegion": 0.508
+    }
+  ],
+  "FilesAttributes": [
+    {
+      "Path": "mppt charger-F_Cu.gbr",
+      "FileFunction": "Copper,L1,Top",
+      "FilePolarity": "Positive"
+    },
+    {
+      "Path": "mppt charger-B_Cu.gbr",
+      "FileFunction": "Copper,L2,Bot",
+      "FilePolarity": "Positive"
+    },
+    {
+      "Path": "mppt charger-F_Silkscreen.gbr",
+      "FileFunction": "Legend,Top",
+      "FilePolarity": "Positive"
+    },
+    {
+      "Path": "mppt charger-F_Mask.gbr",
+      "FileFunction": "SolderMask,Top",
+      "FilePolarity": "Negative"
+    },
+    {
+      "Path": "mppt charger-B_Mask.gbr",
+      "FileFunction": "SolderMask,Bot",
+      "FilePolarity": "Negative"
+    },
+    {
+      "Path": "mppt charger-Edge_Cuts.gbr",
+      "FileFunction": "Profile",
+      "FilePolarity": "Positive"
+    }
+  ],
+  "MaterialStackup": [
+    {
+      "Type": "Legend",
+      "Name": "Top Silk Screen"
+    },
+    {
+      "Type": "SolderPaste",
+      "Name": "Top Solder Paste"
+    },
+    {
+      "Type": "SolderMask",
+      "Name": "Top Solder Mask"
+    },
+    {
+      "Type": "Copper",
+      "Name": "F.Cu"
+    },
+    {
+      "Type": "Dielectric",
+      "Material": "FR4",
+      "Name": "F.Cu/B.Cu",
+      "Notes": "Type: dielectric layer 1 (from F.Cu to B.Cu)"
+    },
+    {
+      "Type": "Copper",
+      "Name": "B.Cu"
+    },
+    {
+      "Type": "SolderMask",
+      "Name": "Bottom Solder Mask"
+    },
+    {
+      "Type": "SolderPaste",
+      "Name": "Bottom Solder Paste"
+    },
+    {
+      "Type": "Legend",
+      "Name": "Bottom Silk Screen"
+    }
+  ]
 }
